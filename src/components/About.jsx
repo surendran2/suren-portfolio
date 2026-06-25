@@ -42,7 +42,7 @@ export default function About() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-xl md:text-2xl font-heading font-bold text-slate-700 dark:text-gray-200"
+              className="text-2xl md:text-3xl font-heading font-bold text-slate-800 dark:text-white leading-tight"
             >
               Architecting solutions across the complete development lifecycle.
             </motion.h3>
@@ -52,7 +52,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-slate-600 dark:text-gray-300 leading-relaxed text-base"
+              className="text-slate-600 dark:text-gray-300 leading-8 text-base md:text-lg"
             >
               {bio}
             </motion.p>
@@ -62,7 +62,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-slate-600 dark:text-gray-300 leading-relaxed text-base"
+              className="text-slate-600 dark:text-gray-300 leading-8 text-base md:text-lg"
             >
               Throughout my career, I've focused on bridge-building between front-end aesthetics and backend systems. By automating workflows and optimizing SQL databases, I have successfully helped organizations reduce manual data entry work, boost checkout transaction speeds, and streamline API integrations.
             </motion.p>
@@ -83,9 +83,11 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + index * 0.05 }}
-                  className="flex items-center gap-2.5 text-slate-700 dark:text-gray-300 text-sm font-medium"
+                  className="flex items-center gap-3 text-slate-800 dark:text-gray-200 text-sm md:text-base font-medium"
                 >
-                  <span className="flex-shrink-0 w-2 h-2 rounded-full bg-accent-blue" />
+                  <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-accent-blue/10 dark:bg-accent-blue/20 flex items-center justify-center">
+                    <span className="w-2.5 h-2.5 rounded-full bg-accent-blue shadow-[0_0_8px_rgba(59,130,246,0.6)]" />
+                  </div>
                   {item}
                 </motion.div>
               ))}
@@ -98,12 +100,13 @@ export default function About() {
               <GlassCard
                 key={stat.label}
                 delay={index * 0.1}
-                className="flex flex-col justify-center items-center text-center p-6"
+                wrapperClass="h-full"
+                className="flex flex-col justify-center items-center text-center p-6 h-full"
               >
-                <div className="text-3xl sm:text-4xl md:text-5xl font-heading font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent-blue to-accent-purple mb-2">
+                <div className="text-4xl sm:text-5xl md:text-6xl font-heading font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-accent-blue to-accent-purple mb-3 drop-shadow-sm">
                   <AnimatedCounter value={stat.value} suffix={stat.suffix || "+"} />
                 </div>
-                <div className="text-xs sm:text-sm font-medium text-slate-500 dark:text-gray-400">
+                <div className="text-sm md:text-base font-semibold text-slate-700 dark:text-gray-200">
                   {stat.label}
                 </div>
               </GlassCard>

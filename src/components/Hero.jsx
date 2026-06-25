@@ -61,7 +61,7 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="text-lg md:text-xl font-medium text-slate-600 dark:text-gray-400 font-heading"
+              className="text-lg md:text-xl font-medium text-slate-600 dark:text-white/80 font-heading"
             >
               Hi there, I'm
             </motion.p>
@@ -90,7 +90,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            className="text-base md:text-lg text-slate-600 dark:text-gray-300 max-w-xl leading-relaxed mx-auto lg:mx-0"
+            className="text-base md:text-lg text-slate-600 dark:text-white/80 max-w-xl leading-relaxed mx-auto lg:mx-0"
           >
             {tagline}
           </motion.p>
@@ -107,7 +107,7 @@ export default function Hero() {
               href={socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-xl glass-panel text-slate-600 dark:text-gray-300 hover:text-accent-purple dark:hover:text-white hover:scale-105 active:scale-95 transition-all"
+              className="p-3 rounded-xl glass-panel text-slate-600 dark:text-white/80 hover:text-accent-purple dark:hover:text-white hover:scale-105 active:scale-95 transition-all"
               aria-label="LinkedIn"
             >
               <FiLinkedin className="w-5 h-5" />
@@ -116,14 +116,14 @@ export default function Hero() {
               href={socials.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-xl glass-panel text-slate-600 dark:text-gray-300 hover:text-accent-purple dark:hover:text-white hover:scale-105 active:scale-95 transition-all"
+              className="p-3 rounded-xl glass-panel text-slate-600 dark:text-white/80 hover:text-accent-purple dark:hover:text-white hover:scale-105 active:scale-95 transition-all"
               aria-label="GitHub"
             >
               <FiGithub className="w-5 h-5" />
             </a>
             <a
               href={socials.email}
-              className="p-3 rounded-xl glass-panel text-slate-600 dark:text-gray-300 hover:text-accent-purple dark:hover:text-white hover:scale-105 active:scale-95 transition-all"
+              className="p-3 rounded-xl glass-panel text-slate-600 dark:text-white/80 hover:text-accent-purple dark:hover:text-white hover:scale-105 active:scale-95 transition-all"
               aria-label="Email Address"
             >
               <FiMail className="w-5 h-5" />
@@ -181,11 +181,11 @@ export default function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
                   <div className="w-3 h-3 rounded-full bg-green-500/60" />
                 </div>
-                <span className="text-[10px] text-gray-500 font-mono">portfolio.config.js</span>
+                <span className="text-[10px] text-gray-500 dark:text-white/60 font-mono">portfolio.config.js</span>
               </div>
 
               {/* Developer properties */}
-              <div className="font-mono text-xs sm:text-sm space-y-4 py-6 overflow-y-auto max-h-[300px] text-slate-700 dark:text-gray-300">
+              <div className="font-mono text-xs sm:text-sm space-y-4 py-6 overflow-y-auto max-h-[300px] text-slate-700 dark:text-white/75">
                 <div>
                   <span className="text-pink-500 dark:text-pink-400">const</span> <span className="text-blue-500 dark:text-blue-400">developer</span> = &#123;
                   <div className="pl-4">
@@ -198,7 +198,7 @@ export default function Hero() {
                     mainStack: [<span className="text-yellow-600 dark:text-yellow-300">"Laravel"</span>, <span className="text-yellow-600 dark:text-yellow-300">"React"</span>, <span className="text-yellow-600 dark:text-yellow-300">"Node"</span>],
                   </div>
                   <div className="pl-4">
-                    aiCapabilities: <span className="text-purple-400">"Prompt Engineering"</span>
+                    aiCapabilities: <span className="text-purple-400 dark:text-purple-300">"Prompt Engineering"</span>
                   </div>
                   &#125;;
                 </div>
@@ -224,7 +224,7 @@ export default function Hero() {
                 {["PHP", "Laravel", "React.js", "Node.js", "MySQL", "AI Prompting"].map((tech) => (
                   <span
                     key={tech}
-                    className="text-[10px] font-semibold font-mono bg-white/5 dark:bg-white/5 text-slate-600 dark:text-gray-400 border border-slate-300 dark:border-white/5 px-2 py-0.5 rounded"
+                    className="text-[10px] font-semibold font-mono bg-white/5 dark:bg-white/5 text-slate-600 dark:text-white/70 border border-slate-300 dark:border-white/5 px-2 py-0.5 rounded"
                   >
                     {tech}
                   </span>

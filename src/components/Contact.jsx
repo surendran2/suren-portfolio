@@ -171,7 +171,7 @@ export default function Contact() {
                       className="w-full bg-slate-100/50 dark:bg-black/20 border border-slate-200 dark:border-white/5 text-slate-800 dark:text-white rounded-xl py-3 px-4.5 text-sm transition-all focus:bg-white dark:focus:bg-black/40"
                     />
                     {errors.name && (
-                      <span className="text-xs text-red-500 flex items-center gap-1"><FiAlertCircle /> {errors.name}</span>
+                      <span className="text-xs text-red-500 dark:text-red-400 flex items-center gap-1"><FiAlertCircle /> {errors.name}</span>
                     )}
                   </div>
 
@@ -190,7 +190,7 @@ export default function Contact() {
                       className="w-full bg-slate-100/50 dark:bg-black/20 border border-slate-200 dark:border-white/5 text-slate-800 dark:text-white rounded-xl py-3 px-4.5 text-sm transition-all focus:bg-white dark:focus:bg-black/40"
                     />
                     {errors.email && (
-                      <span className="text-xs text-red-500 flex items-center gap-1"><FiAlertCircle /> {errors.email}</span>
+                      <span className="text-xs text-red-500 dark:text-red-400 flex items-center gap-1"><FiAlertCircle /> {errors.email}</span>
                     )}
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function Contact() {
                     className="w-full bg-slate-100/50 dark:bg-black/20 border border-slate-200 dark:border-white/5 text-slate-800 dark:text-white rounded-xl py-3 px-4.5 text-sm transition-all focus:bg-white dark:focus:bg-black/40"
                   />
                   {errors.subject && (
-                    <span className="text-xs text-red-500 flex items-center gap-1"><FiAlertCircle /> {errors.subject}</span>
+                      <span className="text-xs text-red-500 dark:text-red-400 flex items-center gap-1"><FiAlertCircle /> {errors.subject}</span>
                   )}
                 </div>
 
@@ -229,7 +229,7 @@ export default function Contact() {
                     className="w-full bg-slate-100/50 dark:bg-black/20 border border-slate-200 dark:border-white/5 text-slate-800 dark:text-white rounded-xl py-3 px-4.5 text-sm transition-all focus:bg-white dark:focus:bg-black/40 resize-none"
                   ></textarea>
                   {errors.message && (
-                    <span className="text-xs text-red-500 flex items-center gap-1"><FiAlertCircle /> {errors.message}</span>
+                      <span className="text-xs text-red-500 dark:text-red-400 flex items-center gap-1"><FiAlertCircle /> {errors.message}</span>
                   )}
                 </div>
 
@@ -260,7 +260,7 @@ export default function Contact() {
                         initial={{ opacity: 0, x: -10 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -10 }}
-                        className="text-emerald-500 font-semibold text-sm flex items-center gap-2"
+                        className="text-emerald-500 dark:text-emerald-400 font-semibold text-sm flex items-center gap-2"
                       >
                         <FiCheckCircle className="w-5 h-5 flex-shrink-0" />
                         Thank you! Your message was submitted successfully.
@@ -271,7 +271,7 @@ export default function Contact() {
                         initial={{ opacity: 0, x: -10 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -10 }}
-                        className="text-red-500 font-semibold text-sm flex items-center gap-2"
+                        className="text-red-500 dark:text-red-400 font-semibold text-sm flex items-center gap-2"
                       >
                         <FiAlertCircle className="w-5 h-5 flex-shrink-0" />
                         Failed to send message. Please try again.

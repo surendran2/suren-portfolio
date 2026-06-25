@@ -11,7 +11,8 @@ export default function Loader({ onComplete }) {
     let currentIndex = 0;
     const textInterval = setInterval(() => {
       if (currentIndex < fullName.length) {
-        setText((prev) => prev + fullName[currentIndex]);
+        const char = fullName[currentIndex];
+        setText((prev) => prev + char);
         currentIndex++;
       } else {
         clearInterval(textInterval);
@@ -40,24 +41,24 @@ export default function Loader({ onComplete }) {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 bg-brand-dark flex flex-col items-center justify-center z-50 px-4">
+    <div className="fixed inset-0 bg-slate-50 dark:bg-brand-dark flex flex-col items-center justify-center z-50 px-4">
       <div className="max-w-md w-full text-left font-mono">
         {/* Terminal Header */}
         <div className="flex items-center gap-1.5 mb-3">
           <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
           <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
           <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
-          <span className="text-gray-500 text-xs ml-2">guest@surendran-i: ~</span>
+          <span className="text-gray-500 dark:text-gray-400 text-xs ml-2">guest@surendran-i: ~</span>
         </div>
 
         {/* Command Box */}
         <div className="border border-white/5 bg-black/40 backdrop-blur-md rounded-lg p-5">
-          <div className="flex text-purple-400 text-sm md:text-base font-semibold mb-2">
-            <span className="text-green-400 mr-2">$</span>
+          <div className="flex text-purple-400 dark:text-purple-300 text-sm md:text-base font-semibold mb-2">
+            <span className="text-green-400 dark:text-green-300 mr-2">$</span>
             <span>npm run dev --init-portfolio</span>
           </div>
 
-          <div className="text-gray-300 text-sm min-h-[24px] mb-4">
+          <div className="text-gray-300 dark:text-gray-200 text-sm min-h-[24px] mb-4">
             {text}
             <motion.span
               animate={{ opacity: [0, 1, 0] }}
@@ -74,7 +75,7 @@ export default function Loader({ onComplete }) {
             ></motion.div>
           </div>
 
-          <div className="flex justify-between text-xs text-gray-500">
+          <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400">
             <span>Loading assets...</span>
             <span>{Math.min(progress, 100)}%</span>
           </div>

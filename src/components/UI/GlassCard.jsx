@@ -5,7 +5,8 @@ export default function GlassCard({
   className = "",
   delay = 0,
   hoverEffect = true,
-  animateOnScroll = true
+  animateOnScroll = true,
+  wrapperClass = ""
 }) {
   const cardContent = (
     <div
@@ -30,6 +31,7 @@ export default function GlassCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
+      className={wrapperClass}
     >
       {cardContent}
     </motion.div>
