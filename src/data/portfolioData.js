@@ -6,8 +6,8 @@ export const portfolioData = {
     bio: "Results-driven Full Stack Developer with 4+ years of experience architecting and delivering scalable enterprise web and mobile applications. Proven track record of improving system performance by up to 60%, reducing manual errors by 60%, and accelerating order processing by 35% through clean architecture and workflow automation. Experienced Prompt Engineer leveraging AI tools to accelerate development velocity in Agile environments.",
     email: "isurendran777@gmail.com",
     phone: "+91 93611 49796",
-    location: "Tamil Nadu, India",
-    resumeUrl: "#", // Placeholder where the user can link their resume file
+    location: "Madurai, Tamil Nadu, India",
+    resumeUrl: "/SUREN_RESUME.pdf", // Link to resume pdf
     socials: {
       github: "https://github.com", // Add exact GitHub link if known or placeholder
       linkedin: "https://linkedin.com/in/surendran-i",
@@ -103,7 +103,7 @@ export const portfolioData = {
   projects: [
     {
       title: "POS QR Ordering & Kitchen Display",
-      category: "Full Stack",
+      category: "Frontend",
       tech: ["React.js", "Laravel", "MySQL", "Bootstrap"],
       problem: "Restaurant staff manually relayed customer orders, causing 60%+ error rate and kitchen delays.",
       solution: "Engineered a QR-based digital ordering platform integrated with a POS system and real-time Kitchen Display System (KDS), enabling customers to order directly from their table.",
@@ -121,7 +121,7 @@ export const portfolioData = {
       outcome: "Improved order processing speed by 35%, increased field team productivity, and reduced manual data entry.",
       github: "https://github.com",
       demo: "https://demo.com",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7h65mK7DX7Fb2omfQ_BD-eE9pkXfdTdtkJnA9OXmuzTRiypt8OsgRmYCR&s=10"
     },
     {
       title: "TVSFIT - Vehicle Service System",
@@ -132,7 +132,7 @@ export const portfolioData = {
       outcome: "Automated workflows improving service efficiency by 30% and eliminating billing discrepancies.",
       github: "https://github.com",
       demo: "https://demo.com",
-      image: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPWg27yC52oPCIcddRyXRCSA06Zc7bok6yHn1m_VcQQ&s=10"
     },
     {
       title: "Simpliapps - ERP & HRMS System",
@@ -143,7 +143,7 @@ export const portfolioData = {
       outcome: "Improved inventory accuracy by 25%, eliminated manual data reconciliation, and centralized operations.",
       github: "https://github.com",
       demo: "https://demo.com",
-      image: "https://images.unsplash.com/photo-1552581230-2645f2987b5e?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Tompang - Ride Booking App",

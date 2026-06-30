@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { FiSun, FiMoon, FiMenu, FiX, FiDownload } from "react-icons/fi";
+import { portfolioData } from "../../data/portfolioData";
 
 const navLinks = [
   { label: "Home", target: "hero" },
@@ -153,11 +154,10 @@ export default function Navbar() {
             </button>
 
             <a
-              href="#resume"
-              onClick={(e) => {
-                e.preventDefault();
-                alert("Resume download workflow triggered. Add resume PDF path here!");
-              }}
+              href={portfolioData.personalInfo.resumeUrl}
+              download="SUREN_RESUME.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-gradient-to-r from-accent-blue to-accent-purple text-white hover:opacity-90 shadow-md hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all cursor-pointer"
             >
               <FiDownload className="w-4 h-4" />
@@ -224,11 +224,10 @@ export default function Navbar() {
             </ul>
             
             <a
-              href="#resume"
-              onClick={(e) => {
-                e.preventDefault();
-                alert("Resume download workflow triggered. Add resume PDF path here!");
-              }}
+              href={portfolioData.personalInfo.resumeUrl}
+              download="Surendran_I_Resume_Optimized.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-accent-blue to-accent-purple text-white shadow-md cursor-pointer"
             >
               <FiDownload className="w-5 h-5" />
