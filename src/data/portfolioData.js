@@ -9,7 +9,7 @@ export const portfolioData = {
     location: "Madurai, Tamil Nadu, India",
     resumeUrl: "/SUREN_RESUME.pdf", // Link to resume pdf
     socials: {
-      github: "https://github.com", // Add exact GitHub link if known or placeholder
+      github: "https://github.com/surendran2", // Add exact GitHub link if known or placeholder
       linkedin: "https://linkedin.com/in/surendran-i",
       email: "mailto:isurendran777@gmail.com"
     },
